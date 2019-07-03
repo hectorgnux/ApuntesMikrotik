@@ -1,0 +1,4 @@
+#Hectorgnux
+local bot "xxxxxxxxxxxxx"
+local ChatID "xxxxxxxxxxxx"
+/tool fetch url="https://api.telegram.org/bot$bot/sendmessage?chat_id=$ChatID&text=MikroTik Site - Switch core Caido" keep-result=no;
