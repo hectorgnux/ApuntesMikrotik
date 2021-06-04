@@ -1,0 +1,6 @@
+#Script
+/ip route add dst-address=8.8.4.4 gateway=127.0.0.1 scope=10 target-scope=10 comment="isp1route" disabled=yes
+/ip route add dst-address=0.0.0.0/0 gateway=8.8.4.4 check-gateway=ping
+/ip route set [find comment="isp1route"] gateway=($"gateway-address") disabled=no
+
+Fuente : https://sudonull.com/post/9131-Recursive-routing-to-MikroTik-through-DHCP-designated-gateways
