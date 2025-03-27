@@ -15,3 +15,7 @@ Este documento detalla cómo configurar un balanceo de carga con failover en Mik
 ### Paso 1: Configurar Interfaces WAN
 
 #### Para DHCP:
+/ip dhcp-client
+add interface=ether1 add-default-route=no
+add interface=ether2 add-default-route=no
+
